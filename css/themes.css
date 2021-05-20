@@ -1,0 +1,148 @@
+/* light theme part */
+
+#nous {
+  display: none;
+}
+
+body.light {
+  background-color: white;
+  color: #6D6D6D;
+}
+
+body.light header{
+  background-color: #BCBCBC;
+}
+
+body.light .devoir{
+  background-color: #BCBCBC;
+}
+
+body.light article{
+  background-color: #BCBCBC;
+}
+
+body.light footer{
+  background-color: #BCBCBC;
+}
+
+body.light #chtheme{
+  background-color: #Ff8888;
+}
+
+body.light .cours a {
+  background-color: lightblue;
+}
+
+body.light .cours a:hover {
+  background-color: white;
+  color: lightblue;
+}
+
+body.light .group p{
+  color: #aDaDaD;
+}
+
+body.light .group p:first-child{
+  color: #dcdcdc;
+}
+
+body.D1.light .group p:last-child{
+  color: #dcdcdc;
+}
+
+body.D1.light .group p:first-child{
+  color: #aDaDaD;
+}
+
+
+/* fix logo visibility under light theme*/
+body.light footer>div:first-child img:last-child {
+  background-color: white;
+}
+
+/*fix git logo */
+body.light footer>div:nth-child(2) img, body.goulag footer>div:nth-child(2) img{
+  filter: none;
+}
+
+body.light footer>div:nth-child(2) a{
+  color: #6D6D6D;
+}
+/*-----------------------------------------*/
+
+/* Communist theme */
+
+body.goulag header a{
+  background-color: darkred;
+}
+
+body.goulag h1{
+  color: #fccc00;
+}
+
+body.goulag #moi {
+  display: none;
+}
+
+body.goulag #nous {
+  display: inline-block;
+}
+
+body.goulag {
+  color: yellow;
+  background-image: url("../images/commu.jpeg");
+  background-position: center;
+}
+
+body.goulag #chtheme{
+  background-color: #222222;
+}
+
+body.goulag .cours a {
+  background-color: darkred;
+}
+
+
+body.goulag .cours a:hover {
+  background-color: white;
+  color: crimson;
+}
+
+
+body.goulag header{
+  opacity: 0.9;
+  background-color: #580003;
+}
+
+body.goulag article{
+  opacity: 0.8;
+  background-color: #580003;
+}
+
+body.goulag .group p{
+  color: yellow;
+}
+
+body.goulag .group p:first-child{
+  color: #555500;
+}
+
+body.D1.goulag .group p:last-child{
+  color: #555500;
+}
+
+body.D1.goulag .group p:first-child{
+  color: inherit;
+}
+
+
+body.goulag footer{
+  opacity: 0.9;
+  background-color: #580003;
+}
+
+body.goulag footer>div:nth-child(2) a{
+  color: #fccc00;
+}
+
+/*----------------------------------------*/

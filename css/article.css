@@ -1,0 +1,111 @@
+article {
+  background-color: #202225;
+  border-radius: 8px;
+  margin: 10px 10px 10px 10px;
+  padding: 15px;
+  transform: scale(1.0);
+  transition: 0.7s;
+  width: 15%;
+  max-width: 180px;
+  min-width: 150px;
+
+  display: flex;
+  align-items: center;
+}
+
+.cours>h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: block;
+  align-self: flex-start;
+}
+
+article>img {
+  position: relative;
+  width: 100%;
+}
+
+article:hover>img {
+  filter: blur(10px);
+  transition: 1s;
+  height: auto;
+}
+
+article:hover {
+  transform: scale(1.08);
+  transition: 0.5s;
+}
+
+article:hover .cours {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cours {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+}
+
+.cours a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 35px;
+  background-color: #42b4ff;
+  border-radius: 10px 100px / 120px;
+  border: 14px;
+}
+
+.cours a:hover {
+  background-color: #2C8FA5;
+}
+
+article>* {
+  margin: 0 auto;
+}
+
+article ul {
+  list-style-type: none;
+  margin: 0 0 23px 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+article li {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.next_cours {
+  border: 5px solid transparent;
+  border-radius: 15px;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+}
+
+/*---------------MEDIA-QUERIES------------------*/
+
+@media screen and (max-width: 450px){
+.cours a {
+  padding: 6px 15px;
+}
+.cours ul li{
+  margin-bottom: 5px;
+}
+.cours .reduc li{
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+.cours .reduc li a{
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+
+}
